@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1f242d;
+  overflow-x: hidden;
+}
+
+section .animate {
+  opacity: 0;
+  filter: blur(5px);
+  transition: 1s;
+}
+
+section.show-motion .animate {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.sec-1 .animate {
+  transform: translateX(-100%);
+}
+
+.sec-1.show-motion .animate{
+  transform: translateX(0);
+}
+
+
+
+h1{
+  font-size: 120px;
+  color: #fff;
+}
+
+p{
+  font-size: 45px;
+  color: #0ef;
+  font-weight: 600;
+}
+
+.sec-2 p{
+  color: #0f0;
+}
+
+.sec-2 .animate {
+  transform: translateX(100%);
+}
+
+.sec-2.show-motion .animate{
+  transform: translateX(0);
+}
+
+.sec-3 p{
+  color: #e0f;
+}
+
+.sec-3 .animate {
+  transform: scale(.7);
+}
+
+.sec-3.show-motion .animate{
+  transform: scale(1);
+}
+
+.sec-4 p{
+  color: #ff0;
+}
+
+.sec-4 .animate {
+  transform: scale(.4);
+}
+
+.sec-4.show-motion .animate{
+  transform: scale(1);
+}
