@@ -36,14 +36,14 @@ section.show-motion .animate {
   transform: translateX(0);
 }
 
-
-
 h1{
+  position: relative;
   font-size: 120px;
   color: #fff;
 }
 
 p{
+  position: relative;
   font-size: 45px;
   color: #0ef;
   font-weight: 600;
@@ -77,10 +77,17 @@ p{
   color: #ff0;
 }
 
-.sec-4 .animate {
-  transform: scale(.4);
+.sec-4 .showRight-animate{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1f242d;
+  transition: 1s;
+  transition-delay: calc(.2s * var(--i));
 }
 
-.sec-4.show-motion .animate{
-  transform: scale(1);
+.sec-4.show-motion .showRight-animate{
+  width: 0;
 }
